@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fonts and Buttons website for class">
+  <title>CSS Fonts and Button Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/main.css">
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
+</head>
+
+
+<body>
+  <header class="main-menu">
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="60px" height="60px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="About/">About</a></li>
+        <li><a href="Contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <picture>
+      <source srcset="images/grand-canyon-sunset-1600w.jpg" media="(min-width: 901px)">
+      <source srcset="images/grand-canyon-sunset-900w.jpg" media="(min-width: 501px)">
+      <source srcset="images/grand-canyon-sunset-500w.jpg" media="(max-width: 500px)">
+      <img src="images/grand-canyon-sunset-900w.jpg" alt="grand canyon at sunset">
+    </picture>
+    <div class="overlay">
+      <div class="text group">
+        <h1> Come & Explore </h1>
+        <p>Learn more about your new adventure!</p>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <h2>The Seven Natural Wonders of the World </h2>
+    <article class="panel">
+      <div class="text-wrapper left">
+        <h3>Do you want to explore the world?</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore. This website will show you how amazing it would be to travel to one of these epic destinations!
+        </p>
+        <a class="button">Learn More</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/cool-image-400.jpg" alt="some green hills ">
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="text-wrapper">
+        <h3>Visit these places for an epic experience</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit</p>
+        <a class="button">Join Here</a>
+      </div>
+      <div class="image-wrapper left">
+        <img src="images/cool-mountain-400.jpg" alt="el capitan in yosemite">
+      </div>
+    </article>
+  </main>
+
+  <aside>
+    <p>A trip of a lifetime! </p>
+  </aside>
+
+  <div class="cards">
+    <div class="card">
+      <a>
+        <img src="images/card-1-everest-400w.jpg" width="400" height="400" loading="lazy" alt="Everest at Dusk">
+        <p class="overlay">
+          Mount Everest
+        </p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a>
+        <img src="images/card-2-lights-400w.jpg" width="400" height="400" loading="lazy" alt="Northern Lights">
+        <p class="overlay">
+          Northern Lights
+        </p>
+      </a>
+    </div>
+
+
+
+    <div class="card">
+      <a>
+        <img src="images/card-3-volcano-400w.jpg" width="400" height="400" loading="lazy" alt="Volcano in Mexico">
+        <p class="overlay">
+          Volcano
+        </p>
+
+      </a>
+    </div>
+
+    <div class="card">
+      <a>
+        <img src="images/card-4-waterfall-400w.jpg" width="400" height="400" loading="lazy" alt="Victoria Falls">
+        <p class="overlay">
+          Waterfall
+        </p>
+
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+  <footer>
+    <p> </p>
+  </footer>
+</body>
+
+</html>
